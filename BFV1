@@ -82,6 +82,10 @@ repeat wait()
 	end
 until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
 
+        game:GetService("ReplicatedStorage").Util.Sound.Storage.Ope.RadioKnife.SwordSwing:Destroy()
+        game:GetService("ReplicatedStorage").Util.Sound.Storage.Swing:Destroy()
+        game:GetService("ReplicatedStorage").Util.Sound.Storage.Lazy.Hit1:Destroy()
+	
 OldWorld = false
 NewWorld = false
 ThreeWorld = false
