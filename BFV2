@@ -39,6 +39,11 @@ until game.Players.LocalPlayer.Team ~= nil
 do local ui = game:GetService("CoreGui"):FindFirstChild("Luna")  if ui then ui:Destroy() --[[game.Players.LocalPlayer:kick("\n\nFind Gui\n")]] wait(2) ui:Destroy() end end
 do local ui = game:GetService("CoreGui"):FindFirstChild("ABc")   if ui then ui:Destroy() --[[game.Players.LocalPlayer:kick("\n\nFind Gui\n")]] wait(2) ui:Destroy() end end
 
+        game:GetService("ReplicatedStorage").Util.Sound.Storage.Ope.RadioKnife.SwordSwing:Destroy()
+        game:GetService("ReplicatedStorage").Util.Sound.Storage.Swing:Destroy()
+        game:GetService("ReplicatedStorage").Util.Sound.Storage.Lazy.Hit1:Destroy()
+	
+	
 Old = false
 New = false
 Three = false
