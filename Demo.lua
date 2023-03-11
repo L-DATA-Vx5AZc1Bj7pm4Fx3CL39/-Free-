@@ -9,25 +9,6 @@
 
 ]] 
 
-Key = "IT_LOCKER_HUB"
-Id = "1056892681600634921"
-token = "LwhofAJMuwygWshJr2hrfy7bXIrTqog9fQqNepVTD8cBbIHKs6iu2FgtDxLoBsA7LRY9"
-
-if getgenv().Discordid == "" or getgenv().Discordid == nil then
-    getgenv().Discordid = "Demo Version"
-end
-if getgenv().Key == "" or getgenv().Key == nil then
-    getgenv().Key = "Demo Version" 
-end
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/HellWayer/Whilelist-Checker/main/Webhook.lua", true))()
-        
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Notification System", 
-    Text = "Start Demo Version",
-    Duration = 5
-})
-
 repeat wait()
 	if game.Players.LocalPlayer.Team == nil and game:GetService("Players")["LocalPlayer"].PlayerGui.Main.ChooseTeam.Visible == true then
 		if _G.SelectTeam == "Pirate" then
